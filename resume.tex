@@ -1,0 +1,214 @@
+\documentclass[a4paper,11pt]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc} % Character encoding
+\usepackage[T1]{fontenc}    % Font encoding
+\usepackage[left=0.75in,right=0.75in,top=0.6in,bottom=0.6in]{geometry} % Margins
+\usepackage{titlesec}       % Custom section titles
+\usepackage{enumitem}       % Custom lists
+\usepackage{hyperref}       % Hyperlinks
+\usepackage{xcolor}         % Colors
+
+% --- Formatting Setup ---
+
+% Define link colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=teal,
+}
+
+% Custom Section Formatting
+\titleformat{\section}
+{\Large\bfseries\uppercase} % Format
+{}                          % Label
+{0em}                       % Sep
+{}                          % Before
+[\titlerule]                % After (horizontal line)
+
+% Custom List Spacing (Tightens up bullet points)
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
+
+% Custom Command for Experience Headers
+% Usage: \experienceheader{Role}{Dates}{Company/Institution}{Location}
+\newcommand{\experienceheader}[4]{
+    \noindent \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4} \vspace{2pt}
+}
+
+% --- Begin Document ---
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{Abdelhamid FSIAN}} \\ \vspace{5pt}
+    Toulouse, France \\
+    \href{mailto:abdelhamid-nour-eddine.fsian@u-bourgogne.fr}{abdelhamid-nour-eddine.fsian@u-bourgogne.fr} | \href{mailto:AbdelhamidNour.Fsian@cnes.fr}{AbdelhamidNour.Fsian@cnes.fr} | +33 751 98 67 11\\
+    \href{https://www.linkedin.com/in/hamid-fsian-abb669161/}{LinkedIn} | \href{https://github.com/HamidFsian}{GitHub} |
+    \href{https://scholar.google.com/citations?user=KpIs5bQAAAAJ&hl=fr&oi=sra}{Google Scholar}
+\end{center}
+
+\vspace{10pt}
+
+% --- Professional Summary ---
+% --- Professional Summary ---
+\section{Profile}
+\noindent Computational Imagaging researcher with 4+ years of experience in image reconstruction, deep learning, and material appearance estimation. Developed novel pipelines for joint demosaicking and super-resolution of Spectral Filter Array (SFA) data, and extended them to multi-frame and multi-view video sequences. Strong background in scientific programming, research communication, and deployment of ML models in production environments.
+
+% --- Education ---
+\section{Education}
+
+\experienceheader{Ph.D. in Computational Imaging \& Computer Vision}{10/2022 -- 10/2025 }{Université de Bourgogne }{Dijon, France}
+\begin{itemize}
+    \item \textbf{Thesis:} ``Unified spectral image reconstruction and material appearance estimation from video sequences using Spectral Filter Array (SFA) cameras.''
+    \item \textbf{Advisors:} Dr. Jean-Baptiste Thomas, Prof. Pierre Gouton, Prof. Jon Y. Hardeberg
+    \item Awarded CNES postdoctoral fellowship to work on lunar rover imaging (RASHID-2 mission).
+\end{itemize}
+\vspace{8pt}
+
+\experienceheader{M.Sc. in Image Processing \& Computer Vision}{09/2020 -- 09/2022}{Université de Bourgogne}{Dijon, France}
+\begin{itemize}
+    \item Major de promotion (ranked 1st).
+    \item Master's thesis: Joint demosaicking and super-resolution of multispectral video using deep learning.
+\end{itemize}
+\vspace{8pt}
+
+\experienceheader{M.Sc. in Automation \& Control}{09/2018 -- 07/2020}{University of Tlemcen}{Tlemcen, Algeria}
+\begin{itemize}
+    \item Specialized in control theory and signal processing.
+\end{itemize}
+
+% --- Industrial Experience ---
+
+% --- Experience ---
+\section{Experience}
+
+\experienceheader{3D Team Lead}{Dec 2025 -- Present}{Velmeni}{Remote, USA}
+\begin{itemize}
+    \item Leading the 3D engineering team in developing advanced dental imaging solutions and overseeing the technical roadmap for CBCT processing.
+    \item Coordinating cross-functional efforts between ML researchers and backend engineers to accelerate the deployment of diagnostic tools.
+    \item Establishing best practices for 3D data versioning and absolute calibration of raw imagery to ensure clinical accuracy.
+    \item Managing sprint planning, technical debt reduction, and professional development for a team of specialized engineers.
+\end{itemize}
+\vspace{4pt}
+
+\experienceheader{Research Scientist}{Oct 2022 -- Apr 2025}{Velmeni}{Remote, USA}
+\begin{itemize}
+    \item Trained and deployed deep learning models for dental image segmentation (teeth, sinuses, mandibular canal) to assist dentists.
+    \item Designed and maintained end-to-end CBCT pipelines (DICOM $\rightarrow$ NIfTI, STL generation, 3D rendering) for treatment planning.
+    \item Deployed REST APIs for ML models (FastAPI, Docker, AWS) and integrated them into the clinical web platform.
+    \item Improved robustness and latency of 3D verification workflows by refactoring Celery workers and stabilizing background jobs.
+    \item Implemented automated evaluation scripts to monitor model performance on real cases (e.g., Dice score, Hausdorff distance).
+    \item Standardized internal codebases (logging, configuration, S3 utilities), reducing maintenance overhead and easing onboarding.
+    \item Collaborated with dentists and backend engineers to define requirements, validate outputs, and iterate on product features.
+    \item Mentored junior engineers and interns on medical image processing and best practices in production ML.
+\end{itemize}
+\vspace{8pt}
+
+
+\experienceheader{Postdoctoral Researcher}{Jan 2025 -- Present}{CNES}{Toulouse, France}
+\begin{itemize}
+    \item Characterization and spectral image reconstruction for the SFA camera onboard the RASHID-2 and 3 lunar rover.
+\end{itemize}
+\vspace{8pt}
+
+
+\experienceheader{Co-Owner}{Mar 2024 -- Present}{Spektralion}{Gjøvik, Norway}
+\begin{itemize}
+    \item Spektralion advises companies on the use of spectral imaging technologies.
+\end{itemize}
+\vspace{8pt}
+
+\experienceheader{Visiting Researcher}{June 2023 to December 2023}{Norwegian University of Science and Technology (NTNU)}{Gjøvik, Norway}
+\begin{itemize}
+    \item Conducted collaborative research on spectral imaging and color science within the Department of Computer Science.
+\end{itemize}
+\vspace{8pt}
+
+
+
+
+\experienceheader{Master's Thesis Co-Supervisor}{Mar 2025 -- Oct 2025}{Université de Bourgogne Europe}{Dijon, France}
+\begin{itemize}
+    \item Co-supervised a Master’s thesis on applying diffusion models for spatial super-resolution from synthetic spectral data.
+    \item Directed the research to publication: \textit{A Comparative Evaluation of Super-Resolution Methods for Spectral Images Using Pretrained RGB Models} (\href{https://doi.org/10.3390/s1010000}{DOI: 10.3390/s1010000}).
+\end{itemize}
+\vspace{12pt}
+
+\experienceheader{Computer Vision Intern}{Mar 2022 -- Sep 2022}{Actemium Paris Transport}{Paris, France}
+\begin{itemize}
+    \item Contributed to the development of visual recognition systems for transportation infrastructure.
+\end{itemize}
+
+
+% --- Academic Teaching ---
+\section{Academic Teaching}
+
+
+\experienceheader{Teaching Assistant}{2022 -- 2025}{Université de Bourgogne}{Dijon, France}
+\begin{itemize}
+    \item Delivered lab sessions and tutorials in image processing, colorimetry, and electronics for undergraduate and master's students.
+    \item Supervised research projects on multispectral image stitching and deep learning.
+    \item Co-supervised a Master’s thesis that led to the publication:
+    \begin{itemize}
+        \item \textit{“Evaluating Super-Resolution for Spectral Imaging: A Comparison of Interpolation, CNN, GAN, and Diffusion”}, submitted in 2025.
+    \end{itemize}
+\end{itemize}
+
+% --- Research Experience ---
+
+\section{Research Experience}
+
+\noindent \textbf{Joint Demosaicking and Super-Resolution for SFA Cameras} | \textit{Python, PyTorch}
+\begin{itemize}
+    \item Developed a deep learning model for joint reconstruction from raw SFA images (single-frame).
+    \item Designed a two-branch architecture with attention-based fusion and pixel-shuffle upsampling.
+\end{itemize}
+
+\noindent \textbf{Multi-Frame and Multi-View Spectral Image Fusion} | \textit{Python, OpenCV}
+\begin{itemize}
+    \item Implemented multi-frame alignment and stitching using homography estimation on selected spectral bands.
+    \item Analyzed impact of overlap ratio and keypoint selection on spectral reconstruction quality.
+\end{itemize}
+
+\noindent \textbf{SVBRDF Estimation from Multispectral Sequences} | \textit{Python, PyTorch}
+\begin{itemize}
+    \item Adapted a state-of-the-art SVBRDF estimation pipeline to handle 9-band spectral image sequences.
+    \item Replaced RGB backbones with SwinUNet and spectral-aware attention blocks to estimate normals, roughness, and reflectance.
+\end{itemize}
+
+
+%------ LISTS of Publications ---
+% --- Publications ---
+\section{Publications}
+
+\begin{itemize}
+    \item A.N. Fsian, J.-B. Thomas, J.Y. Hardeberg, and P. Gouton, “\textbf{Deep Joint Demosaicking and Super-Resolution for Spectral Filter Array Images},” \textit{IEEE Access}, vol. 13, pp. 16208–16222, 2025. \href{https://doi.org/10.1109/ACCESS.2025.3528753}{DOI:10.1109/ACCESS.2025.3528753}
+    
+    \item A.N. Fsian, J.-B. Thomas, J.Y. Hardeberg, and P. Gouton, “\textbf{Spectral Reconstruction from RGB Imagery: A Potential Option for Infinite Spectral Data?},” \textit{Sensors}, vol. 24, no. 11, p. 3666, 2024. \href{https://doi.org/10.3390/s24113666}{DOI:10.3390/s24113666}
+    
+    \item A.N. Fsian, J.-B. Thomas, J.Y. Hardeberg, and P. Gouton, “\textbf{Stitching from Spectral Filter Array Video Sequences},” in \textit{Computational Color Imaging (CCIW 2024)}, LNCS, vol. 15193, Springer, 2025. \href{https://doi.org/10.1007/978-3-031-72845-7_10}{DOI:10.1007/978-3-031-72845-7\_10}
+    
+    \item A.N. Fsian, J.-B. Thomas, J.Y. Hardeberg, and P. Gouton, “\textbf{Bayesian Multispectral Videos Super Resolution},” in \textit{Proc. 11th European Workshop on Visual Information Processing (EUVIP)}, Gjøvik, Norway, 2023, pp. 1–6. \href{https://doi.org/10.1109/EUVIP58404.2023.10323068}{DOI:10.1109/EUVIP58404.2023.10323068}
+    
+    \item A.N. Fsian, M.A. Khawaja, M. Kresovic, L. Righetto, and J.Y. Hardeberg, “\textbf{Apple Bruise Detection using Multispectral Imaging},” in \textit{Proc. ICDIP 2025}, Proc. SPIE 13709, 137091Z (2025). \href{https://doi.org/10.1117/12.3075704}{DOI:10.1117/12.3075704}
+    
+    \item A.N. Fsian, J.-B. Thomas, J.Y. Hardeberg, and P. Gouton, “\textbf{Unified method for image reconstruction and super-resolution of SFA video sequences},” \textit{EURASIP Journal on Image and Video Processing}, under review, 2025.
+\end{itemize}
+
+
+% --- Software Skills ---
+\section{Software Skills}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C++, MATLAB, Bash
+    \item \textbf{Deep Learning:} PyTorch, TensorFlow, Keras
+    \item \textbf{Image Processing:} OpenCV, SimpleITK, Scikit-Image
+    \item \textbf{Tools \& Infra:} Git, Docker, Celery, Traefik, AWS S3, FastAPI
+    \item \textbf{OS:} Linux, Windows
+\end{itemize}
+
+\section{Languages}
+\noindent French (Native), English (Professional), Arabic (Native), Japanese (Basic)
+
+\end{document}

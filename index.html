@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhamid Fsian — Computational Imaging Researcher</title>
+    <meta name="description" content="Postdoctoral researcher at CNES on RASHID-3 lunar rover imaging. 3D Team Lead at Velmeni. PhD in Computational Imaging & Computer Vision.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ── Navigation ── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="#top">
+                <span class="nav-logo-mark">AF</span>
+                <span class="nav-logo-text">Abdelhamid Fsian</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#industry">Industry</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <header class="hero" id="top">
+        <canvas id="hero-canvas"></canvas>
+
+        <!-- Floating orbs -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                Open to research collaborations &amp; consulting
+            </div>
+
+            <h1 class="hero-name">
+                <span class="hero-first">Abdelhamid</span>
+                <span class="hero-last gradient-text">Fsian</span>
+            </h1>
+
+            <p class="hero-roles">
+                <span id="role-text"></span><span class="cursor">|</span>
+            </p>
+
+            <p class="hero-bio">
+                PhD in Computational Imaging · Building spectral vision systems for
+                <strong>lunar exploration</strong> and <strong>clinical diagnostics</strong>.
+                Currently mapping the Moon's mineralogy — one photon at a time.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#research" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                    See My Research
+                </a>
+                <a href="resume.pdf" target="_blank" class="btn btn-ghost">Download CV</a>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/hamid-fsian-abb669161/" target="_blank" class="social-btn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/HamidFsian" target="_blank" class="social-btn" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=KpIs5bQAAAAJ&hl=fr&oi=sra" target="_blank" class="social-btn" title="Google Scholar">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="stats-bar">
+            <div class="stat"><span class="stat-n" data-to="4">0</span><span class="stat-plus">+</span><span class="stat-l">Yrs Research</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><span class="stat-n" data-to="6">0</span><span class="stat-l">Publications</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><span class="stat-n" data-to="2">0</span><span class="stat-l">Lunar Missions</span></div>
+            <div class="stat-sep"></div>
+            <div class="stat"><span class="stat-n" data-to="3">0</span><span class="stat-l">Active Roles</span></div>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- ── About ── -->
+    <section class="section" id="about">
+        <div class="section-orb section-orb--teal"></div>
+        <div class="container">
+            <div class="about-grid">
+                <!-- Profile card -->
+                <div class="profile-card tilt-card reveal-left">
+                    <div class="profile-glow"></div>
+                    <div class="avatar-wrap">
+                        <div class="avatar">AF</div>
+                        <div class="avatar-orbit">
+                            <div class="orbit-dot orbit-dot-1"></div>
+                            <div class="orbit-dot orbit-dot-2"></div>
+                        </div>
+                    </div>
+                    <h3 class="profile-name">Abdelhamid Fsian</h3>
+                    <p class="profile-title">Postdoctoral Researcher · CNES</p>
+                    <p class="profile-loc">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Toulouse, France
+                    </p>
+                    <div class="profile-chips">
+                        <span>Spectral Imaging</span><span>Deep Learning</span>
+                        <span>3D Reconstruction</span><span>Space Tech</span>
+                        <span>Medical AI</span><span>SVBRDF</span>
+                    </div>
+                    <div class="profile-links">
+                        <a href="mailto:abdelhamid-nour-eddine.fsian@u-bourgogne.fr">Email</a>
+                        <a href="https://www.linkedin.com/in/hamid-fsian-abb669161/" target="_blank">LinkedIn</a>
+                        <a href="https://scholar.google.com/citations?user=KpIs5bQAAAAJ" target="_blank">Scholar</a>
+                    </div>
+                </div>
+
+                <!-- Bio -->
+                <div class="about-bio reveal-right">
+                    <h2 class="section-label">About Me</h2>
+                    <p>
+                        I design imaging systems that <strong>see beyond human perception</strong>.
+                        My research sits at the intersection of computational optics, signal processing,
+                        and deep learning — specifically applied to <strong>Spectral Filter Array (SFA)
+                        cameras</strong>, sensors that capture 9–16 wavelength bands simultaneously.
+                    </p>
+                    <p>
+                        My PhD produced the first unified framework for <strong>joint demosaicking,
+                        super-resolution, and material appearance estimation</strong> from SFA video
+                        sequences — work now deployed in a <strong>lunar rover camera pipeline</strong>
+                        at CNES, in collaboration with CEA and the Mohammed bin Rashid Space Centre.
+                    </p>
+                    <p>
+                        On the industrial side, I lead a team building <strong>AI-powered dental
+                        CBCT analysis</strong> used in clinics worldwide, deploying 3D segmentation
+                        and treatment planning tools from first principles to production.
+                    </p>
+
+                    <div class="affil-row">
+                        <div class="affil-item">
+                            <span class="affil-dot" style="--c:#00e5cc"></span>
+                            <div><strong>CNES</strong><span>Postdoctoral Researcher</span></div>
+                        </div>
+                        <div class="affil-item">
+                            <span class="affil-dot" style="--c:#9d7bea"></span>
+                            <div><strong>Velmeni</strong><span>3D Team Lead</span></div>
+                        </div>
+                        <div class="affil-item">
+                            <span class="affil-dot" style="--c:#fb923c"></span>
+                            <div><strong>Spektralion</strong><span>Co-Owner</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Education mini-timeline -->
+                    <div class="edu-strip">
+                        <div class="edu-strip-item">
+                            <span class="edu-badge">PhD</span>
+                            <div>
+                                <strong>Computational Imaging &amp; CV</strong>
+                                <span>Université de Bourgogne · 2022–2025</span>
+                            </div>
+                        </div>
+                        <div class="edu-strip-item">
+                            <span class="edu-badge edu-badge--msc">M.Sc.</span>
+                            <div>
+                                <strong>Image Processing &amp; CV — Ranked 1st</strong>
+                                <span>Université de Bourgogne · 2020–2022</span>
+                            </div>
+                        </div>
+                        <div class="edu-strip-item">
+                            <span class="edu-badge edu-badge--eng">M.Sc.</span>
+                            <div>
+                                <strong>Automation &amp; Control</strong>
+                                <span>University of Tlemcen · 2018–2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Research ── -->
+    <section class="section section-mesh" id="research">
+        <div class="section-orb section-orb--violet"></div>
+        <div class="container">
+            <h2 class="section-label reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                Academic Research
+            </h2>
+            <p class="section-sub reveal">PhD thesis work + CNES postdoctoral research in collaboration with CEA</p>
+
+            <!-- CNES / RASHID-3 card -->
+            <div class="research-card tilt-card reveal">
+                <div class="research-card-visual research-card-visual--space">
+                    <!-- Animated star field -->
+                    <div class="starfield" id="starfield"></div>
+                    <!-- Moon surface -->
+                    <div class="moon-ground">
+                        <div class="moon-craters"></div>
+                    </div>
+                    <!-- Rover SVG -->
+                    <div class="rover-wrap">
+                        <svg viewBox="0 0 220 110" xmlns="http://www.w3.org/2000/svg" class="rover-svg">
+                            <!-- Body -->
+                            <rect x="65" y="28" width="90" height="44" rx="5" fill="#b0bcd4" opacity="0.92"/>
+                            <!-- Thermal stripes -->
+                            <rect x="65" y="38" width="90" height="4" fill="#d4dce8" opacity="0.5"/>
+                            <rect x="65" y="50" width="90" height="4" fill="#d4dce8" opacity="0.4"/>
+                            <!-- Solar panels L -->
+                            <rect x="18" y="22" width="40" height="14" rx="2" fill="#2355b8" opacity="0.88"/>
+                            <line x1="18" y1="26" x2="58" y2="26" stroke="#1a3d8f" stroke-width="0.8" opacity="0.6"/>
+                            <line x1="18" y1="29" x2="58" y2="29" stroke="#1a3d8f" stroke-width="0.8" opacity="0.6"/>
+                            <line x1="18" y1="32" x2="58" y2="32" stroke="#1a3d8f" stroke-width="0.8" opacity="0.6"/>
+                            <line x1="36" y1="22" x2="36" y2="36" stroke="#1a3d8f" stroke-width="0.8" opacity="0.5"/>
+                            <line x1="58" y1="29" x2="65" y2="34" stroke="#c8d0e0" stroke-width="1.5"/>
+                            <!-- Solar panels R -->
+                            <rect x="162" y="22" width="40" height="14" rx="2" fill="#2355b8" opacity="0.88"/>
+                            <line x1="162" y1="26" x2="202" y2="26" stroke="#1a3d8f" stroke-width="0.8" opacity="0.6"/>
+                            <line x1="162" y1="29" x2="202" y2="29" stroke="#1a3d8f" stroke-width="0.8" opacity="0.6"/>
+                            <line x1="162" y1="32" x2="202" y2="32" stroke="#1a3d8f" stroke-width="0.8" opacity="0.6"/>
+                            <line x1="182" y1="22" x2="182" y2="36" stroke="#1a3d8f" stroke-width="0.8" opacity="0.5"/>
+                            <line x1="155" y1="34" x2="162" y2="29" stroke="#c8d0e0" stroke-width="1.5"/>
+                            <!-- Camera mast -->
+                            <rect x="103" y="8" width="5" height="22" rx="2" fill="#c8d0e0"/>
+                            <!-- SFA camera head -->
+                            <rect x="95" y="3" width="21" height="13" rx="3" fill="#e2e8f4"/>
+                            <!-- Multi-band lens array -->
+                            <circle cx="101" cy="9" r="2.5" fill="#0a1220" stroke="#00e5cc" stroke-width="1"/>
+                            <circle cx="101" cy="9" r="1.2" fill="#00e5cc" opacity="0.7"/>
+                            <circle cx="108" cy="9" r="2.5" fill="#0a1220" stroke="#9d7bea" stroke-width="1"/>
+                            <circle cx="108" cy="9" r="1.2" fill="#9d7bea" opacity="0.7"/>
+                            <circle cx="115" cy="9" r="2" fill="#0a1220" stroke="#fb923c" stroke-width="1"/>
+                            <circle cx="115" cy="9" r="1" fill="#fb923c" opacity="0.7"/>
+                            <!-- Antenna -->
+                            <line x1="148" y1="28" x2="163" y2="13" stroke="#c8d0e0" stroke-width="1.5"/>
+                            <circle cx="164" cy="12" r="3.5" fill="none" stroke="#00e5cc" stroke-width="1.5"/>
+                            <circle cx="164" cy="12" r="1.2" fill="#00e5cc" opacity="0.8"/>
+                            <!-- Wheels -->
+                            <g fill="#546070" stroke="#7a8ea0" stroke-width="1.5">
+                                <circle cx="78" cy="76" r="11"/>
+                                <circle cx="110" cy="78" r="11"/>
+                                <circle cx="142" cy="76" r="11"/>
+                            </g>
+                            <!-- Wheel spokes -->
+                            <g stroke="#8aa0b0" stroke-width="1.2">
+                                <line x1="78" y1="65" x2="78" y2="87"/><line x1="67" y1="76" x2="89" y2="76"/>
+                                <line x1="110" y1="67" x2="110" y2="89"/><line x1="99" y1="78" x2="121" y2="78"/>
+                                <line x1="142" y1="65" x2="142" y2="87"/><line x1="131" y1="76" x2="153" y2="76"/>
+                            </g>
+                            <!-- Spectral beams from camera -->
+                            <line x1="105" y1="3" x2="98" y2="-8" stroke="#00e5cc" stroke-width="1" stroke-dasharray="2 2" opacity="0" class="cam-beam"/>
+                            <line x1="110" y1="3" x2="110" y2="-10" stroke="#9d7bea" stroke-width="1" stroke-dasharray="2 2" opacity="0" class="cam-beam"/>
+                            <line x1="115" y1="3" x2="122" y2="-8" stroke="#fb923c" stroke-width="1" stroke-dasharray="2 2" opacity="0" class="cam-beam"/>
+                        </svg>
+                    </div>
+                    <!-- Spectral scan lines -->
+                    <div class="scan-lines">
+                        <div class="scan-line" style="--c:#00e5cc;--d:0s"></div>
+                        <div class="scan-line" style="--c:#9d7bea;--d:0.6s"></div>
+                        <div class="scan-line" style="--c:#fb923c;--d:1.2s"></div>
+                    </div>
+                    <!-- Logo overlay -->
+                    <div class="card-logo-badge">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Logo_du_Centre_national_d%27%C3%A9tudes_spatiales_%28CNES%29.svg/200px-Logo_du_Centre_national_d%27%C3%A9tudes_spatiales_%28CNES%29.svg.png"
+                             alt="CNES" class="cnes-logo" onerror="this.replaceWith(document.createTextNode('CNES'))">
+                    </div>
+                </div>
+                <div class="research-card-body">
+                    <div class="rc-tags">
+                        <span class="rc-tag rc-tag--space">Space · CNES × CEA</span>
+                        <span class="rc-tag">SFA Cameras</span>
+                        <span class="rc-tag">PyTorch</span>
+                        <span class="rc-tag">Jan 2025 – Present</span>
+                    </div>
+                    <h3>Spectral Camera Pipeline for RASHID-3 Lunar Rover</h3>
+                    <p>
+                        As a <strong>CNES-funded postdoctoral fellow</strong>, in collaboration with
+                        <strong>CEA</strong> and the Mohammed bin Rashid Space Centre (MBRSC), I develop
+                        the full spectral image reconstruction pipeline for the SFA camera onboard the
+                        <strong>RASHID-2 and RASHID-3 lunar rovers</strong>. The camera captures
+                        multi-band imagery of the lunar surface to analyse soil mineralogy and regolith
+                        composition in unprecedented spectral detail.
+                    </p>
+                    <ul class="rc-list">
+                        <li>Absolute radiometric &amp; spectral calibration of SFA sensor under vacuum/thermal conditions</li>
+                        <li>Deep learning demosaicking adapted to extreme lunar illumination contrasts</li>
+                        <li>Robust reconstruction under dust interference and partial sensor occlusion</li>
+                        <li>Collaborative pipeline integration with CEA hardware team and MBRSC mission engineers</li>
+                    </ul>
+                    <div class="rc-links">
+                        <a href="https://cnes.fr" target="_blank" class="btn btn-outline btn-sm">CNES</a>
+                        <a href="https://doi.org/10.1109/ACCESS.2025.3528753" target="_blank" class="btn btn-outline btn-sm">Related Publication</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PhD / SFA research card -->
+            <div class="research-card research-card--reverse tilt-card reveal">
+                <div class="research-card-visual research-card-visual--sfa">
+                    <svg class="sfa-svg" viewBox="0 0 380 240" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="nn-grad" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="#00e5cc" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#9d7bea" stop-opacity="0.8"/>
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Step labels -->
+                        <text x="37" y="14" text-anchor="middle" fill="#7a8299" font-size="8" font-family="JetBrains Mono">RAW SFA INPUT</text>
+                        <text x="190" y="14" text-anchor="middle" fill="#7a8299" font-size="8" font-family="JetBrains Mono">DEEP MODEL</text>
+                        <text x="343" y="14" text-anchor="middle" fill="#7a8299" font-size="8" font-family="JetBrains Mono">SPECTRAL OUTPUT</text>
+
+                        <!-- Raw mosaic -->
+                        <rect x="0" y="20" width="74" height="74" rx="4" fill="#0d1028" stroke="#1e2140" stroke-width="1"/>
+                        <rect x="3" y="23" width="16" height="16" fill="#ff6b6b" opacity="0.75" rx="1"/>
+                        <rect x="21" y="23" width="16" height="16" fill="#ffa94d" opacity="0.75" rx="1"/>
+                        <rect x="39" y="23" width="16" height="16" fill="#ffe066" opacity="0.75" rx="1"/>
+                        <rect x="57" y="23" width="14" height="16" fill="#69db7c" opacity="0.75" rx="1"/>
+                        <rect x="3" y="41" width="16" height="16" fill="#4dabf7" opacity="0.75" rx="1"/>
+                        <rect x="21" y="41" width="16" height="16" fill="#9775fa" opacity="0.75" rx="1"/>
+                        <rect x="39" y="41" width="16" height="16" fill="#00e5cc" opacity="0.75" rx="1"/>
+                        <rect x="57" y="41" width="14" height="16" fill="#f783ac" opacity="0.75" rx="1"/>
+                        <rect x="3" y="59" width="16" height="16" fill="#ffe066" opacity="0.65" rx="1"/>
+                        <rect x="21" y="59" width="16" height="16" fill="#ff6b6b" opacity="0.65" rx="1"/>
+                        <rect x="39" y="59" width="16" height="16" fill="#4dabf7" opacity="0.65" rx="1"/>
+                        <rect x="57" y="59" width="14" height="16" fill="#ffa94d" opacity="0.65" rx="1"/>
+                        <rect x="3" y="77" width="16" height="14" fill="#9775fa" opacity="0.65" rx="1"/>
+                        <rect x="21" y="77" width="16" height="14" fill="#00e5cc" opacity="0.65" rx="1"/>
+                        <rect x="39" y="77" width="16" height="14" fill="#f783ac" opacity="0.65" rx="1"/>
+                        <rect x="57" y="77" width="14" height="14" fill="#69db7c" opacity="0.65" rx="1"/>
+                        <text x="37" y="106" text-anchor="middle" fill="#00e5cc" font-size="7.5" font-family="JetBrains Mono">16-band mosaic</text>
+
+                        <!-- Arrow 1 -->
+                        <line x1="78" y1="57" x2="105" y2="57" stroke="url(#nn-grad)" stroke-width="1.5" stroke-dasharray="4 2"/>
+                        <polygon points="105,53 113,57 105,61" fill="#00e5cc"/>
+
+                        <!-- Neural net -->
+                        <rect x="117" y="18" width="146" height="90" rx="6" fill="#0a0c1e" stroke="#00e5cc" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.8"/>
+                        <!-- Input layer -->
+                        <g fill="#00e5cc" opacity="0.8">
+                            <circle cx="134" cy="30" r="4"/><circle cx="134" cy="43" r="4"/>
+                            <circle cx="134" cy="56" r="4"/><circle cx="134" cy="69" r="4"/>
+                            <circle cx="134" cy="82" r="4"/><circle cx="134" cy="95" r="4"/>
+                        </g>
+                        <!-- Hidden layer 1 -->
+                        <g fill="#7c63c9" opacity="0.8">
+                            <circle cx="163" cy="24" r="4"/><circle cx="163" cy="37" r="4"/>
+                            <circle cx="163" cy="50" r="4"/><circle cx="163" cy="63" r="4"/>
+                            <circle cx="163" cy="76" r="4"/><circle cx="163" cy="89" r="4"/><circle cx="163" cy="102" r="4"/>
+                        </g>
+                        <!-- Hidden layer 2 (attention) -->
+                        <g fill="#9d7bea" opacity="0.9">
+                            <circle cx="195" cy="30" r="5"/><circle cx="195" cy="47" r="5"/>
+                            <circle cx="195" cy="64" r="5"/><circle cx="195" cy="81" r="5"/><circle cx="195" cy="98" r="5"/>
+                        </g>
+                        <!-- Output layer -->
+                        <g fill="#fb923c" opacity="0.8">
+                            <circle cx="226" cy="30" r="4"/><circle cx="226" cy="43" r="4"/>
+                            <circle cx="226" cy="56" r="4"/><circle cx="226" cy="69" r="4"/>
+                            <circle cx="226" cy="82" r="4"/><circle cx="226" cy="95" r="4"/>
+                        </g>
+                        <!-- Connections (partial) -->
+                        <g stroke="#00e5cc" stroke-width="0.35" opacity="0.25">
+                            <line x1="138" y1="30" x2="159" y2="24"/><line x1="138" y1="30" x2="159" y2="37"/>
+                            <line x1="138" y1="56" x2="159" y2="50"/><line x1="138" y1="56" x2="159" y2="63"/>
+                            <line x1="138" y1="82" x2="159" y2="76"/><line x1="138" y1="82" x2="159" y2="89"/>
+                            <line x1="138" y1="95" x2="159" y2="102"/>
+                        </g>
+                        <g stroke="#9d7bea" stroke-width="0.35" opacity="0.25">
+                            <line x1="167" y1="24" x2="190" y2="30"/><line x1="167" y1="50" x2="190" y2="47"/>
+                            <line x1="167" y1="76" x2="190" y2="64"/><line x1="167" y1="102" x2="190" y2="81"/>
+                        </g>
+                        <g stroke="#fb923c" stroke-width="0.35" opacity="0.25">
+                            <line x1="200" y1="30" x2="222" y2="30"/><line x1="200" y1="47" x2="222" y2="43"/>
+                            <line x1="200" y1="64" x2="222" y2="56"/><line x1="200" y1="81" x2="222" y2="69"/>
+                            <line x1="200" y1="98" x2="222" y2="82"/>
+                        </g>
+                        <!-- Labels -->
+                        <text x="190" y="116" text-anchor="middle" fill="#9d7bea" font-size="7" font-family="JetBrains Mono">attention-based fusion + pixel-shuffle SR</text>
+
+                        <!-- Arrow 2 -->
+                        <line x1="264" y1="57" x2="291" y2="57" stroke="url(#nn-grad)" stroke-width="1.5" stroke-dasharray="4 2"/>
+                        <polygon points="291,53 299,57 291,61" fill="#9d7bea"/>
+                        <text x="278" y="50" text-anchor="middle" fill="#7a8299" font-size="7.5" font-family="JetBrains Mono">×2 SR</text>
+
+                        <!-- Spectral stack output -->
+                        <rect x="338" y="15" width="56" height="40" rx="3" fill="#ff6b6b" opacity="0.28" stroke="#ff6b6b" stroke-width="0.8"/>
+                        <rect x="332" y="22" width="56" height="40" rx="3" fill="#ffa94d" opacity="0.28" stroke="#ffa94d" stroke-width="0.8"/>
+                        <rect x="326" y="29" width="56" height="40" rx="3" fill="#ffe066" opacity="0.3" stroke="#ffe066" stroke-width="0.8"/>
+                        <rect x="320" y="36" width="56" height="40" rx="3" fill="#69db7c" opacity="0.32" stroke="#69db7c" stroke-width="0.8"/>
+                        <rect x="314" y="43" width="56" height="40" rx="3" fill="#4dabf7" opacity="0.32" stroke="#4dabf7" stroke-width="0.8"/>
+                        <rect x="308" y="50" width="56" height="40" rx="3" fill="#9775fa" opacity="0.35" stroke="#9775fa" stroke-width="0.8"/>
+                        <rect x="302" y="57" width="56" height="40" rx="3" fill="#00e5cc" opacity="0.35" stroke="#00e5cc" stroke-width="0.8"/>
+                        <text x="343" y="108" text-anchor="middle" fill="#00e5cc" font-size="7.5" font-family="JetBrains Mono">9–16 spectral bands</text>
+
+                        <!-- Bottom pipeline label -->
+                        <text x="190" y="135" text-anchor="middle" fill="#3d4060" font-size="8.5" font-family="Inter">Joint Demosaicking + Super-Resolution (DRDmSR)</text>
+
+                        <!-- SVBRDF extension -->
+                        <rect x="10" y="155" width="360" height="75" rx="6" fill="#0a0c1e" stroke="#1e2140" stroke-width="1"/>
+                        <text x="190" y="172" text-anchor="middle" fill="#7a8299" font-size="7.5" font-family="JetBrains Mono">SVBRDF Extension — Material Appearance Estimation</text>
+                        <!-- Normal map box -->
+                        <rect x="25" y="180" width="65" height="38" rx="3" fill="#1a1e30" stroke="#fb923c" stroke-width="0.8"/>
+                        <text x="57" y="202" text-anchor="middle" fill="#fb923c" font-size="7" font-family="JetBrains Mono">Normal Map</text>
+                        <!-- Roughness -->
+                        <rect x="105" y="180" width="65" height="38" rx="3" fill="#1a1e30" stroke="#9d7bea" stroke-width="0.8"/>
+                        <text x="137" y="202" text-anchor="middle" fill="#9d7bea" font-size="7" font-family="JetBrains Mono">Roughness</text>
+                        <!-- Reflectance -->
+                        <rect x="185" y="180" width="65" height="38" rx="3" fill="#1a1e30" stroke="#00e5cc" stroke-width="0.8"/>
+                        <text x="217" y="202" text-anchor="middle" fill="#00e5cc" font-size="7" font-family="JetBrains Mono">Reflectance</text>
+                        <!-- Specular -->
+                        <rect x="265" y="180" width="80" height="38" rx="3" fill="#1a1e30" stroke="#ffe066" stroke-width="0.8"/>
+                        <text x="305" y="202" text-anchor="middle" fill="#ffe066" font-size="7" font-family="JetBrains Mono">Specular (BRDF)</text>
+                        <!-- Backbone label -->
+                        <text x="190" y="228" text-anchor="middle" fill="#3d4060" font-size="7.5" font-family="JetBrains Mono">SwinUNet + spectral-aware attention blocks</text>
+                    </svg>
+                </div>
+                <div class="research-card-body">
+                    <div class="rc-tags">
+                        <span class="rc-tag rc-tag--phd">PhD Research</span>
+                        <span class="rc-tag">PyTorch</span>
+                        <span class="rc-tag">OpenCV</span>
+                        <span class="rc-tag">2022–2025</span>
+                    </div>
+                    <h3>Unified SFA Image Reconstruction &amp; Material Appearance Estimation</h3>
+                    <p>
+                        My doctoral thesis produced a <strong>unified deep learning framework</strong>
+                        that jointly solves demosaicking, super-resolution, and SVBRDF estimation from
+                        spectral filter array video sequences. The work was conducted at the
+                        Université de Bourgogne with Prof. Jon Y. Hardeberg (NTNU) and
+                        Prof. Pierre Gouton, and directly informed the CNES mission pipeline.
+                    </p>
+                    <ul class="rc-list">
+                        <li>Two-branch architecture with attention-based spectral fusion and pixel-shuffle upsampling</li>
+                        <li>Multi-frame alignment &amp; stitching using homography on selected spectral bands</li>
+                        <li>Replaced RGB backbones with SwinUNet + spectral-aware attention for SVBRDF estimation</li>
+                        <li>Visiting researcher at NTNU Gjøvik — collaboration with color science group</li>
+                    </ul>
+                    <div class="rc-links">
+                        <a href="https://github.com/HamidFsian/DRDmSR" target="_blank" class="btn btn-outline btn-sm">GitHub: DRDmSR</a>
+                        <a href="https://doi.org/10.1109/ACCESS.2025.3528753" target="_blank" class="btn btn-outline btn-sm">IEEE Access</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Industry ── -->
+    <section class="section" id="industry">
+        <div class="section-orb section-orb--orange"></div>
+        <div class="container">
+            <h2 class="section-label reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                Industry
+            </h2>
+            <p class="section-sub reveal">Building and shipping production AI systems in clinical healthcare</p>
+
+            <!-- Velmeni hero card -->
+            <div class="industry-hero tilt-card reveal">
+                <div class="industry-visual">
+                    <div class="industry-glow"></div>
+                    <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" class="cbct-svg">
+                        <defs>
+                            <radialGradient id="medglow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#4ade80" stop-opacity="0.12"/>
+                                <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+                            </radialGradient>
+                            <linearGradient id="boneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#e2e8f0" stop-opacity="0.95"/>
+                                <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.75"/>
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="170" cy="110" rx="140" ry="95" fill="url(#medglow)"/>
+                        <!-- Jaw outline -->
+                        <path d="M90,68 Q170,50 250,68 L262,148 Q170,175 78,148 Z"
+                              fill="none" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.4"/>
+                        <!-- Upper teeth -->
+                        <g>
+                            <rect x="108" y="70" width="14" height="22" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.9" opacity="0.9"/>
+                            <rect x="125" y="67" width="15" height="25" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.9" opacity="0.9"/>
+                            <rect x="143" y="65" width="15" height="27" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.9" opacity="0.9"/>
+                            <rect x="161" y="65" width="15" height="27" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.9" opacity="0.9"/>
+                            <rect x="179" y="67" width="15" height="25" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.9" opacity="0.9"/>
+                            <rect x="197" y="70" width="14" height="22" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.9" opacity="0.9"/>
+                        </g>
+                        <!-- Lower teeth -->
+                        <g opacity="0.7">
+                            <rect x="108" y="122" width="14" height="20" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.7"/>
+                            <rect x="125" y="120" width="15" height="22" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.7"/>
+                            <rect x="143" y="118" width="15" height="24" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.7"/>
+                            <rect x="161" y="118" width="15" height="24" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.7"/>
+                            <rect x="179" y="120" width="15" height="22" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.7"/>
+                            <rect x="197" y="122" width="14" height="20" rx="3" fill="url(#boneGrad)" stroke="#4ade80" stroke-width="0.7"/>
+                        </g>
+                        <!-- Mandibular canal -->
+                        <path d="M83,138 Q170,158 257,138" fill="none" stroke="#fbbf24" stroke-width="3" opacity="0.85"/>
+                        <!-- Sinus regions -->
+                        <ellipse cx="108" cy="80" rx="12" ry="7" fill="none" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.8"/>
+                        <ellipse cx="212" cy="80" rx="12" ry="7" fill="none" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.8"/>
+                        <text x="108" y="62" text-anchor="middle" fill="#60a5fa" font-size="8" font-family="JetBrains Mono" opacity="0.9">sinus</text>
+                        <text x="212" y="62" text-anchor="middle" fill="#60a5fa" font-size="8" font-family="JetBrains Mono" opacity="0.9">sinus</text>
+                        <text x="170" y="178" text-anchor="middle" fill="#fbbf24" font-size="8" font-family="JetBrains Mono" opacity="0.9">mandibular canal</text>
+                        <!-- Legend -->
+                        <rect x="12" y="185" width="60" height="14" rx="3" fill="#4ade80" opacity="0.12" stroke="#4ade80" stroke-width="0.8"/>
+                        <text x="42" y="195" text-anchor="middle" fill="#4ade80" font-size="7.5" font-family="JetBrains Mono">teeth</text>
+                        <rect x="82" y="185" width="80" height="14" rx="3" fill="#fbbf24" opacity="0.12" stroke="#fbbf24" stroke-width="0.8"/>
+                        <text x="122" y="195" text-anchor="middle" fill="#fbbf24" font-size="7.5" font-family="JetBrains Mono">mandib. canal</text>
+                        <rect x="172" y="185" width="58" height="14" rx="3" fill="#60a5fa" opacity="0.12" stroke="#60a5fa" stroke-width="0.8"/>
+                        <text x="201" y="195" text-anchor="middle" fill="#60a5fa" font-size="7.5" font-family="JetBrains Mono">sinuses</text>
+                        <!-- Dice badge -->
+                        <rect x="260" y="8" width="72" height="40" rx="6" fill="#0a0c1e" stroke="#4ade80" stroke-width="1"/>
+                        <text x="296" y="24" text-anchor="middle" fill="#4ade80" font-size="7.5" font-family="JetBrains Mono">Dice Score</text>
+                        <text x="296" y="40" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="JetBrains Mono" font-weight="bold">0.94</text>
+                    </svg>
+                </div>
+                <div class="industry-body">
+                    <div class="company-header">
+                        <div class="company-name-block">
+                            <h3>Velmeni</h3>
+                            <span class="company-loc">Remote · USA</span>
+                        </div>
+                        <span class="active-pill">Active</span>
+                    </div>
+                    <div class="role-timeline">
+                        <div class="role-entry role-entry--current">
+                            <span class="role-dot"></span>
+                            <div>
+                                <strong>3D Team Lead</strong>
+                                <span class="role-date">Dec 2025 – Present</span>
+                            </div>
+                        </div>
+                        <div class="role-entry">
+                            <span class="role-dot role-dot--past"></span>
+                            <div>
+                                <strong>Research Scientist</strong>
+                                <span class="role-date">Oct 2022 – Apr 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        At Velmeni I built and now lead the 3D engineering team developing
+                        <strong>AI-powered CBCT dental analysis</strong>. As Research Scientist I took the
+                        platform from research prototype to production — deploying segmentation
+                        models for teeth, sinuses, and mandibular canal used by dentists worldwide.
+                        Now as Team Lead I own the full technical roadmap and team development.
+                    </p>
+                    <div class="industry-skills-grid">
+                        <div class="isg-item">
+                            <span class="isg-icon">⬡</span>
+                            <div><strong>3D Pipelines</strong><span>DICOM → NIfTI → STL → 3D rendering</span></div>
+                        </div>
+                        <div class="isg-item">
+                            <span class="isg-icon">⬡</span>
+                            <div><strong>MLOps</strong><span>FastAPI · Docker · Celery · AWS S3</span></div>
+                        </div>
+                        <div class="isg-item">
+                            <span class="isg-icon">⬡</span>
+                            <div><strong>Model Monitoring</strong><span>Dice score · Hausdorff distance tracking</span></div>
+                        </div>
+                        <div class="isg-item">
+                            <span class="isg-icon">⬡</span>
+                            <div><strong>Team Leadership</strong><span>Sprint planning · mentoring · technical debt</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other industry -->
+            <div class="mini-industry-grid">
+                <div class="mini-card reveal tilt-card">
+                    <div class="mini-card-accent" style="--ac:#fb923c"></div>
+                    <h4>Spektralion</h4>
+                    <p class="mini-loc">Gjøvik, Norway · Mar 2024 – Present</p>
+                    <p>Co-owner of a consulting company advising clients on spectral imaging technology adoption and integration.</p>
+                    <span class="mini-pill">Co-Owner</span>
+                </div>
+                <div class="mini-card reveal tilt-card">
+                    <div class="mini-card-accent" style="--ac:#9d7bea"></div>
+                    <h4>Actemium Paris Transport</h4>
+                    <p class="mini-loc">Paris, France · Mar – Sep 2022</p>
+                    <p>Computer Vision intern — contributed to visual recognition systems for transportation infrastructure.</p>
+                    <span class="mini-pill">Internship</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section class="section section-mesh" id="projects">
+        <div class="section-orb section-orb--teal"></div>
+        <div class="container">
+            <h2 class="section-label reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Open Source Projects
+            </h2>
+            <p class="section-sub reveal">Computer vision research code — from spectral imaging to medical AI</p>
+            <div class="projects-grid">
+
+                <a href="https://github.com/HamidFsian/DRDmSR" target="_blank" class="proj-card proj-card--featured tilt-card reveal">
+                    <div class="proj-card-glow"></div>
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--teal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <div class="proj-lang">Jupyter Notebook</div>
+                    </div>
+                    <h3>DRDmSR</h3>
+                    <p>Official PyTorch implementation of <em>Deep Joint Demosaicking and Super-Resolution for Spectral Filter Array Images</em> — the core PhD contribution, published in IEEE Access.</p>
+                    <div class="proj-tags">
+                        <span>SFA</span><span>Super-Resolution</span><span>Demosaicking</span><span>IEEE Access</span>
+                    </div>
+                    <div class="proj-footer">
+                        <span class="proj-arrow">View on GitHub →</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/HamidFsian/MultiFrameDemoSR" target="_blank" class="proj-card tilt-card reveal">
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--violet">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                        </div>
+                        <div class="proj-lang">Python</div>
+                    </div>
+                    <h3>MultiFrameDemoSR</h3>
+                    <p>Multi-frame demosaicking and super-resolution for SFA video sequences — extends single-frame approach using homography alignment and temporal fusion.</p>
+                    <div class="proj-tags"><span>Multi-frame</span><span>Video</span><span>Homography</span></div>
+                    <div class="proj-footer"><span class="proj-arrow">View on GitHub →</span></div>
+                </a>
+
+                <a href="https://github.com/HamidFsian/Apple_Bruise_NTNU" target="_blank" class="proj-card tilt-card reveal">
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        </div>
+                        <div class="proj-lang">Jupyter Notebook</div>
+                    </div>
+                    <h3>Apple Bruise Detection</h3>
+                    <p>Multispectral imaging for non-invasive apple bruise detection — NTNU collaboration, published at ICDIP 2025 (Proc. SPIE).</p>
+                    <div class="proj-tags"><span>Multispectral</span><span>Food Quality</span><span>SPIE 2025</span></div>
+                    <div class="proj-footer"><span class="proj-arrow">View on GitHub →</span></div>
+                </a>
+
+                <a href="https://github.com/HamidFsian/MRI_Brain_Segmentation" target="_blank" class="proj-card tilt-card reveal">
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <div class="proj-lang">Jupyter Notebook</div>
+                    </div>
+                    <h3>MRI Brain Segmentation</h3>
+                    <p>Brain tumor segmentation using the BRATS 2020 benchmark dataset — 3D U-Net architecture for multi-class MRI segmentation.</p>
+                    <div class="proj-tags"><span>Medical Imaging</span><span>BRATS 2020</span><span>3D U-Net</span></div>
+                    <div class="proj-footer"><span class="proj-arrow">View on GitHub →</span></div>
+                </a>
+
+                <a href="https://github.com/HamidFsian/RPPG" target="_blank" class="proj-card tilt-card reveal">
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--violet">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <div class="proj-lang">C++</div>
+                    </div>
+                    <h3>Remote PPG (rPPG)</h3>
+                    <p>Remote photoplethysmography — contactless heart rate estimation from facial video using signal processing and optical flow techniques.</p>
+                    <div class="proj-tags"><span>C++</span><span>Signal Processing</span><span>Health</span></div>
+                    <div class="proj-footer"><span class="proj-arrow">View on GitHub →</span></div>
+                </a>
+
+                <a href="https://github.com/HamidFsian/PP-CNN2" target="_blank" class="proj-card tilt-card reveal">
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                        </div>
+                        <div class="proj-lang">C++</div>
+                    </div>
+                    <h3>Privacy-Preserving CNN</h3>
+                    <p>Inference on encrypted data using homomorphic encryption — running CNN predictions without decrypting sensitive inputs.</p>
+                    <div class="proj-tags"><span>Homomorphic Encryption</span><span>Privacy</span><span>C++</span></div>
+                    <div class="proj-footer"><span class="proj-arrow">View on GitHub →</span></div>
+                </a>
+
+                <a href="https://github.com/HamidFsian/Sign-Language-Recognition" target="_blank" class="proj-card tilt-card reveal">
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--teal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        </div>
+                        <div class="proj-lang">Jupyter Notebook</div>
+                    </div>
+                    <h3>Sign Language Recognition</h3>
+                    <p>Real-time hand gesture recognition for sign language using deep learning on skeleton keypoints and image-based classification.</p>
+                    <div class="proj-tags"><span>Gesture</span><span>Classification</span><span>Keypoints</span></div>
+                    <div class="proj-footer"><span class="proj-arrow">View on GitHub →</span></div>
+                </a>
+
+                <a href="https://github.com/HamidFsian/CNNStereoMatching" target="_blank" class="proj-card tilt-card reveal">
+                    <div class="proj-top">
+                        <div class="proj-icon proj-icon--green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                        </div>
+                        <div class="proj-lang">Python</div>
+                    </div>
+                    <h3>CNN Stereo Matching</h3>
+                    <p>PSMNet (Pyramid Stereo Matching Network) architecture with pre-trained model for disparity estimation in stereo vision.</p>
+                    <div class="proj-tags"><span>Stereo Vision</span><span>Disparity</span><span>PSMNet</span></div>
+                    <div class="proj-footer"><span class="proj-arrow">View on GitHub →</span></div>
+                </a>
+
+            </div>
+            <div class="projects-more reveal">
+                <a href="https://github.com/HamidFsian" target="_blank" class="btn btn-ghost">
+                    View All Repositories on GitHub →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Publications ── -->
+    <section class="section" id="publications">
+        <div class="container">
+            <h2 class="section-label reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                Publications
+            </h2>
+            <div class="pub-list">
+
+                <a href="https://doi.org/10.1109/ACCESS.2025.3528753" target="_blank" class="pub-row reveal">
+                    <div class="pub-meta">
+                        <span class="pub-badge pub-badge--j">Journal</span>
+                        <span class="pub-yr">2025</span>
+                    </div>
+                    <div class="pub-text">
+                        <h3>Deep Joint Demosaicking and Super-Resolution for Spectral Filter Array Images</h3>
+                        <p>A.N. Fsian, J.-B. Thomas, J.Y. Hardeberg, P. Gouton · <em>IEEE Access</em> vol. 13</p>
+                    </div>
+                    <span class="pub-arr">→</span>
+                </a>
+
+                <a href="https://doi.org/10.3390/s24113666" target="_blank" class="pub-row reveal">
+                    <div class="pub-meta">
+                        <span class="pub-badge pub-badge--j">Journal</span>
+                        <span class="pub-yr">2024</span>
+                    </div>
+                    <div class="pub-text">
+                        <h3>Spectral Reconstruction from RGB Imagery: A Potential Option for Infinite Spectral Data?</h3>
+                        <p>A.N. Fsian, J.-B. Thomas, J.Y. Hardeberg, P. Gouton · <em>Sensors</em> vol. 24</p>
+                    </div>
+                    <span class="pub-arr">→</span>
+                </a>
+
+                <a href="https://doi.org/10.1007/978-3-031-72845-7_10" target="_blank" class="pub-row reveal">
+                    <div class="pub-meta">
+                        <span class="pub-badge pub-badge--c">Conf.</span>
+                        <span class="pub-yr">2025</span>
+                    </div>
+                    <div class="pub-text">
+                        <h3>Stitching from Spectral Filter Array Video Sequences</h3>
+                        <p>A.N. Fsian et al. · <em>CCIW 2024</em> · Springer LNCS vol. 15193</p>
+                    </div>
+                    <span class="pub-arr">→</span>
+                </a>
+
+                <a href="https://doi.org/10.1109/EUVIP58404.2023.10323068" target="_blank" class="pub-row reveal">
+                    <div class="pub-meta">
+                        <span class="pub-badge pub-badge--c">Conf.</span>
+                        <span class="pub-yr">2023</span>
+                    </div>
+                    <div class="pub-text">
+                        <h3>Bayesian Multispectral Videos Super Resolution</h3>
+                        <p>A.N. Fsian et al. · <em>EUVIP 2023</em> · Gjøvik, Norway</p>
+                    </div>
+                    <span class="pub-arr">→</span>
+                </a>
+
+                <a href="https://doi.org/10.1117/12.3075704" target="_blank" class="pub-row reveal">
+                    <div class="pub-meta">
+                        <span class="pub-badge pub-badge--c">Conf.</span>
+                        <span class="pub-yr">2025</span>
+                    </div>
+                    <div class="pub-text">
+                        <h3>Apple Bruise Detection using Multispectral Imaging</h3>
+                        <p>A.N. Fsian, M.A. Khawaja et al. · <em>ICDIP 2025</em> · Proc. SPIE 13709</p>
+                    </div>
+                    <span class="pub-arr">→</span>
+                </a>
+
+                <div class="pub-row pub-row--review reveal">
+                    <div class="pub-meta">
+                        <span class="pub-badge pub-badge--r">Review</span>
+                        <span class="pub-yr">2025</span>
+                    </div>
+                    <div class="pub-text">
+                        <h3>Unified Method for Image Reconstruction and Super-Resolution of SFA Video Sequences</h3>
+                        <p>A.N. Fsian et al. · <em>EURASIP Journal on Image and Video Processing</em> · Under Review</p>
+                    </div>
+                    <span class="pub-arr" style="opacity:.25">—</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Skills ── -->
+    <section class="section section-mesh" id="skills">
+        <div class="container">
+            <h2 class="section-label reveal">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box tilt-card reveal">
+                    <div class="skill-box-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-pills"><span class="sp-main">Python</span><span>C++</span><span>MATLAB</span><span>Bash</span></div>
+                </div>
+                <div class="skill-box tilt-card reveal">
+                    <div class="skill-box-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <div class="skill-pills"><span class="sp-main">PyTorch</span><span>TensorFlow</span><span>Keras</span></div>
+                </div>
+                <div class="skill-box tilt-card reveal">
+                    <div class="skill-box-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3>Image Processing</h3>
+                    <div class="skill-pills"><span class="sp-main">OpenCV</span><span>SimpleITK</span><span>Scikit-Image</span></div>
+                </div>
+                <div class="skill-box tilt-card reveal">
+                    <div class="skill-box-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                    </div>
+                    <h3>MLOps &amp; Infra</h3>
+                    <div class="skill-pills"><span class="sp-main">Docker</span><span>FastAPI</span><span>AWS S3</span><span>Celery</span><span>Git</span></div>
+                </div>
+                <div class="skill-box skill-box--wide tilt-card reveal">
+                    <div class="skill-box-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8l6 6 6-6"/></svg>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-pills">
+                        <span class="sp-lang">French <em>Native</em></span>
+                        <span class="sp-lang">Arabic <em>Native</em></span>
+                        <span class="sp-lang">English <em>Professional</em></span>
+                        <span class="sp-lang">Japanese <em>Basic</em></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-orb-1"></div>
+        <div class="contact-orb-2"></div>
+        <div class="container contact-inner">
+            <h2 class="contact-h reveal">Let's Work Together</h2>
+            <p class="contact-sub reveal">Research collaborations · industry consulting · spectral imaging · medical AI · space technology</p>
+            <div class="contact-cards reveal">
+                <a href="mailto:abdelhamid-nour-eddine.fsian@u-bourgogne.fr" class="ccard tilt-card">
+                    <div class="ccard-icon ccard-icon--teal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div><p class="ccard-label">Academic / University</p><p class="ccard-val">abdelhamid-nour-eddine.fsian@u-bourgogne.fr</p></div>
+                </a>
+                <a href="mailto:AbdelhamidNour.Fsian@cnes.fr" class="ccard tilt-card">
+                    <div class="ccard-icon ccard-icon--space">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div><p class="ccard-label">CNES · Space Research</p><p class="ccard-val">AbdelhamidNour.Fsian@cnes.fr</p></div>
+                </a>
+            </div>
+            <div class="contact-socials reveal">
+                <a href="https://www.linkedin.com/in/hamid-fsian-abb669161/" target="_blank" class="btn btn-ghost">LinkedIn</a>
+                <a href="https://github.com/HamidFsian" target="_blank" class="btn btn-ghost">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=KpIs5bQAAAAJ&hl=fr&oi=sra" target="_blank" class="btn btn-ghost">Google Scholar</a>
+                <a href="resume.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <span>&copy; 2025 Abdelhamid Fsian · Toulouse, France</span>
+            <span>Built with HTML &amp; CSS · No frameworks</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
