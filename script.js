@@ -188,6 +188,102 @@ document.querySelectorAll('.tilt-card').forEach(card => {
     document.head.appendChild(style);
 })();
 
+/* ── Bibtex database ── */
+const bibtexDB = {
+    fsian2025deep: `@article{fsian2025deep,
+  title     = {Deep Joint Demosaicking and Super-Resolution for Spectral Filter Array Images},
+  author    = {Fsian, Abdelhamid Nour-Eddine and Thomas, Jean-Baptiste and Hardeberg, Jon Yngve and Gouton, Pierre},
+  journal   = {IEEE Access},
+  volume    = {13},
+  year      = {2025},
+  doi       = {10.1109/ACCESS.2025.3528753}
+}`,
+    fsian2024spectral: `@article{fsian2024spectral,
+  title     = {Spectral Reconstruction from RGB Imagery: A Potential Option for Infinite Spectral Data?},
+  author    = {Fsian, Abdelhamid Nour-Eddine and Thomas, Jean-Baptiste and Hardeberg, Jon Yngve and Gouton, Pierre},
+  journal   = {Sensors},
+  volume    = {24},
+  year      = {2024},
+  doi       = {10.3390/s24113666}
+}`,
+    fsian2025stitching: `@inproceedings{fsian2025stitching,
+  title     = {Stitching from Spectral Filter Array Video Sequences},
+  author    = {Fsian, Abdelhamid Nour-Eddine and others},
+  booktitle = {Computational Color Imaging Workshop (CCIW 2024), Springer LNCS},
+  volume    = {15193},
+  year      = {2025},
+  doi       = {10.1007/978-3-031-72845-7_10}
+}`,
+    fsian2023bayesian: `@inproceedings{fsian2023bayesian,
+  title     = {Bayesian Multispectral Videos Super Resolution},
+  author    = {Fsian, Abdelhamid Nour-Eddine and others},
+  booktitle = {11th European Workshop on Visual Information Processing (EUVIP 2023)},
+  year      = {2023},
+  doi       = {10.1109/EUVIP58404.2023.10323068}
+}`,
+    fsian2025apple: `@inproceedings{fsian2025apple,
+  title     = {Apple Bruise Detection using Multispectral Imaging},
+  author    = {Fsian, Abdelhamid Nour-Eddine and Khawaja, Muhammad Atif and others},
+  booktitle = {ICDIP 2025, Proceedings of SPIE},
+  volume    = {13709},
+  year      = {2025},
+  doi       = {10.1117/12.3075704}
+}`,
+    fsian2025unified: `@article{fsian2025unified,
+  title     = {Unified Method for Image Reconstruction and Super-Resolution of SFA Video Sequences},
+  author    = {Fsian, Abdelhamid Nour-Eddine and others},
+  journal   = {EURASIP Journal on Image and Video Processing},
+  note      = {Under Review},
+  year      = {2025}
+}`
+};
+
+/* ── Bibtex popup ── */
+(function () {
+    const popup  = document.getElementById('bib-popup');
+    const content = document.getElementById('bib-content');
+    const closeBtn = document.getElementById('bib-close');
+    const copyBtn  = document.getElementById('bib-copy');
+
+    function openBib(key) {
+        content.textContent = bibtexDB[key] || '% BibTeX entry not available';
+        popup.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeBib() {
+        popup.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.pub-btn--bib').forEach(btn => {
+        btn.addEventListener('click', () => openBib(btn.dataset.bibKey));
+    });
+    if (closeBtn) closeBtn.addEventListener('click', closeBib);
+    if (popup) popup.addEventListener('click', e => { if (e.target === popup) closeBib(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeBib(); });
+
+    if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+            const text = content.textContent;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(() => {
+                    copyBtn.textContent = 'Copied ✓';
+                    setTimeout(() => { copyBtn.textContent = 'Copy to Clipboard'; }, 2000);
+                });
+            } else {
+                const el = document.createElement('textarea');
+                el.value = text;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                copyBtn.textContent = 'Copied ✓';
+                setTimeout(() => { copyBtn.textContent = 'Copy to Clipboard'; }, 2000);
+            }
+        });
+    }
+})();
+
 /* ── Active nav link highlight ── */
 const sections = document.querySelectorAll('section[id], header[id]');
 const navAs = document.querySelectorAll('.nav-links a');
